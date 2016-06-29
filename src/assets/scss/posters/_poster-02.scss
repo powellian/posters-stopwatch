@@ -1,0 +1,139 @@
+/*
+*	Poster 01 - Farbige Graphik in Grenchen
+*/
+
+$canvasHeight: 855px;
+$blackArt: #191A15;
+
+// Outer element:
+#Poster02 {
+    background: #fff;
+
+	// Inner element - poster background:
+	.poster-02 {
+		position: relative;
+		height: $canvasHeight;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbdac9+0,faece1+0,feded3+100 */
+		background: rgb(251,218,201); /* Old browsers */
+		background: -moz-radial-gradient(center, ellipse cover,  rgba(251,218,201,1) 0%, rgba(250,236,225,1) 0%, rgba(254,222,211,1) 100%); /* FF3.6-15 */
+		background: -webkit-radial-gradient(center, ellipse cover,  rgba(251,218,201,1) 0%,rgba(250,236,225,1) 0%,rgba(254,222,211,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: radial-gradient(ellipse at center,  rgba(251,218,201,1) 0%,rgba(250,236,225,1) 0%,rgba(254,222,211,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbdac9', endColorstr='#feded3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	}
+}
+
+// Blocks
+.blocks {
+	margin-top: 205px;
+
+	.blue,
+	.red {
+		height: 350px;
+		position: relative;
+	}
+	.blue {
+		background: #1082C8;
+		left: -69px;
+	}
+	.red {
+		background: #FC142E;
+		right: -12%;
+	}
+}
+
+$commonLeft: 324px;
+
+// Triangles
+.triangle {
+
+	&.top {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 196px 0 0 105px;
+		border-color: transparent transparent transparent $blackArt;
+		position: absolute;
+		top: 10px;
+		left: $commonLeft;
+	}
+	&.base {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 107px 200px 0;
+		border-color: transparent $blackArt transparent transparent;
+		position: absolute;
+		bottom: 12px;
+		left: 240px;
+	}
+}
+
+// Floating shape
+.tall-wrapper {
+	height: $canvasHeight - 20px;
+	position: absolute;
+	top: 8px;
+	left: $commonLeft;
+
+	.vertical,
+	.base {
+		background: #191A15;
+		position: absolute;
+	}
+	.vertical {
+		height: 465px;
+		width: 105px;
+		top: 198px;
+	}
+	.base {
+		height: 200px;
+		width: 82px;
+		bottom: 0;
+		left: 23px;
+	}
+}
+
+// Hook the 'main' content pod and override Foundation grid styling.
+#Poster02 {
+	font-family: $common-font;
+	$p-spacing: 0.02em;
+
+	.row[role=main] {
+		margin: 0;
+		padding: 0;
+		position: relative;
+		width: 96.2%;
+		left: 30px;
+		top: 25px;
+	}
+	h1 {
+		font-weight: 500;
+		letter-spacing: 0.01em;
+		margin-bottom: 15px;
+		font-size: rem-calc(37.5);
+
+		span {
+			display: block;
+			line-height: 0.95;
+		}
+	}
+	p {
+		font-size: rem-calc(12.75);
+		margin-bottom: 0;
+		line-height: 1.4;
+		letter-spacing: $p-spacing;
+	}
+
+	// 'Smallprint' in <footer>
+	footer {
+		position: relative;
+
+		p {
+			position: absolute;
+			right: 38%;
+			bottom: 40px;
+			letter-spacing: $p-spacing;
+			display: inline-block;
+		}
+	}
+}
