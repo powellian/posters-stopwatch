@@ -4,6 +4,7 @@ Built using the [Zurb Foundation 6](http://foundation.zurb.com/sites/docs/) CLI 
 View the completed test files here: [powellian.com/deeson](http://powellian.com/deeson/)
 
 The relevant work files are located here:
+
 **SASS:**
 `./app/assets/scss/posters`
 `./app/assets/scss/stopwatch`
