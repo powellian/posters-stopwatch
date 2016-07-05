@@ -52,12 +52,11 @@ function pad(num, size) {
 }
 
 function formatTime(time) {
-	// var h = m = s = ms = 0;
-	var h = 0;
-	var m = 0;
-	var s = 0;
-	var ms = 0;
-	var newTime = '';
+	var h = 0,
+		m = 0,
+		s = 0,
+		ms = 0,
+		newTime = '';
 
 	h = Math.floor( time / (60 * 60 * 1000) );
 	time = time % (60 * 60 * 1000);
