@@ -1,8 +1,6 @@
 # posters-stopwatch
 Built using the [Zurb Foundation 6](http://foundation.zurb.com/sites/docs/) CLI install.
 
-View the completed test files here: [powellian.com/deeson](http://powellian.com/deeson/)
-
 The relevant work files are located here:
 
 **SASS:**
@@ -15,12 +13,11 @@ The relevant work files are located here:
 
 ----------
 
-###Optional local build:
-Running the project locally requires dependencies. Get those with the following:
+###For local build:
 `npm install`
 `bower update`
 
-When dependencies are installed, to startup the project locally run:
+To startup the project locally run:
 `npm start`
 This will spin the page up in `http://localhost:8000`
 
