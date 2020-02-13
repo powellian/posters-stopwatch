@@ -1,9 +1,8 @@
 $(document).foundation();
 
-//	Amended version of this Stopwatch: https://gist.github.com/electricg/4372563#file-stopwatch-js
+//	An amended version of this Stopwatch: https://gist.github.com/electricg/4372563#file-stopwatch-js
 //	Removed all the HTML inline .onclick() handlers and created appropriate functions in the script below.
 //	Added 'lap();' function to render lap times. Results of lap(); are cleared in reset() function;
-//	Ian Powell.
 
 // Timer and Button elements:
 var splitTimesWrap = document.getElementById("split-times"),
