@@ -1,34 +1,19 @@
-{{!-- This is the base layout for your project, and will be used on every page. --}}
+{{!-- This is the base layout for your project, and will be used on every page unless specified. --}}
 
 <!doctype html>
 <html class="no-js" lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Deeson Frontend Test | Ian Powell</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+  </head>
+<body>
 
-		<link rel="stylesheet" href="{{root}}assets/css/app.css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Quantico" rel="stylesheet">
+{{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+{{> body}}
 
-	</head>
-
-	<body>
-
-		{{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-		{{> body}}
-
-		<script src="{{root}}assets/js/app.js"></script>
-
-		<script>
-			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-			e.src='//www.google-analytics.com/analytics.js';
-			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-			ga('create','UA-9378260-2','auto');ga('send','pageview');
-		</script>
-
-	</body>
+<script src="{{root}}assets/js/app.js"></script>
+</body>
 </html>
